@@ -1,0 +1,7 @@
+@use './breakpoints' as *;
+
+@mixin sm-min{
+  @media screen and (min-width: $screen-sm-min){
+    @content;
+  }
+}
