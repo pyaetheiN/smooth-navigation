@@ -12,6 +12,26 @@ navClose.addEventListener('click', () => {
 })
 
 
+// active nav-link
+const navLinks = document.querySelectorAll('.nav__link');
+
+function navActive(){
+  navLinks.forEach(n => n.classList.remove('active'));
+  this.classList.add('active');
+}
+
+navLinks.forEach(n => n.addEventListener('click', navActive));
+
+// remove menu upon clicking link
+// function linkClose(){
+//   navLinks.forEach(n => n.addEventListener('click', () => {
+//     navBar.classList.remove('active');
+//   }))
+// }
+
+// navLinks.forEach(n => n.addEventListener('click', linkClose));
+
+
 // dropdown
 const dropdowns = document.querySelectorAll('.dropdown'),
       dropdownLinks = document.querySelectorAll('.dropdown__link'),

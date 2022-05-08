@@ -8,6 +8,9 @@
 body {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
+}
+
+main {
   overflow-x: hidden;
 }
 
@@ -20,10 +23,15 @@ ul {
   list-style: none;
 }
 
+.logo {
+  font-size: 1.5em;
+  color: #000;
+}
+
 .header {
   max-width: 60.5rem;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 1rem;
 }
 
 .nav {
@@ -38,7 +46,7 @@ ul {
   top: 0;
   right: -100%;
   background-color: #fff;
-  padding-top: 2rem;
+  padding-top: 2.5rem;
   width: 9.375rem;
   min-height: 100vh;
   transition: right 0.5s;
@@ -65,23 +73,19 @@ ul {
   color: #000;
 }
 .nav__link:hover {
-  background-color: gray;
-  color: #fff;
+  color: blue;
 }
-@media screen and (min-width: 768px) {
-  .nav__link:hover {
-    background-color: transparent;
-    color: blue;
-  }
+.nav__link.active {
+  color: blue;
 }
 .nav__link--icon {
   transition: transform 0.5s;
 }
 .nav__close {
   position: absolute;
-  top: 0;
-  right: 0.5rem;
-  font-size: 1.3em;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5em;
   cursor: pointer;
 }
 @media screen and (min-width: 768px) {
@@ -90,7 +94,7 @@ ul {
   }
 }
 .nav__menu {
-  font-size: 1.3em;
+  font-size: 1.5em;
   cursor: pointer;
 }
 @media screen and (min-width: 768px) {

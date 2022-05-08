@@ -12,7 +12,7 @@
     top: 0;
     right: -100%;
     background-color: $white;
-    padding-top: 2rem;
+    padding-top: 2.5rem;
     width: rem(150);
     min-height: 100vh;
     transition: right 0.5s;
@@ -29,9 +29,6 @@
       padding-top: 0;
     }
   }
-  // &__item{
-
-  // }
   &__link{
     padding: 0.5em;
     display: flex;
@@ -40,13 +37,10 @@
     color: $black;
 
     &:hover{
-      background-color: gray;
-      color: $white;
-
-      @include sm-min{
-        background-color: transparent;
-        color: blue;
-      }
+      color: blue;
+    }
+    &.active{
+      color: blue;
     }
     &--icon{
       transition: transform 0.5s;
@@ -54,9 +48,9 @@
   }
   &__close{
     position: absolute;
-    top: 0;
-    right: 0.5rem;
-    font-size: 1.3em;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5em;
     cursor: pointer;
 
     @include sm-min{
@@ -64,7 +58,7 @@
     }
   }
   &__menu{
-    font-size: 1.3em;
+    font-size: 1.5em;
     cursor: pointer;
 
     @include sm-min{
