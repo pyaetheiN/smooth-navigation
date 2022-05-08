@@ -1,5 +1,7 @@
 #js practice on navigation
 
+live link: https://pyaethein.github.io/smooth-navigation/
+
 In smaller screens (mobile/tablets), users should be able to: 
 - close navbar upon clicking outside
 - toggle dropdown menu
